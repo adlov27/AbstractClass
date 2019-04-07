@@ -1,0 +1,51 @@
+/**
+ * Abstract Class
+ *
+ * @Addison Loverin 3/27/19
+ */
+//abstract menas this class can't be instantiated
+public abstract class Felis
+{
+    //private fields of super class
+    private double weight;
+    private String name;
+    private boolean isAlive;
+    private int age;
+    
+    public Felis(String s)
+    {
+        name = s;
+        weight = 5;
+        isAlive = true;
+        age = 9;
+    }
+    public Felis() 
+    {
+        name = "Big Chungus";
+        weight = 10;
+        isAlive = true;
+        age = 6;
+    }
+    public Felis(String n, double w, boolean i, int a)
+    {
+        name = n;
+        weight = w;
+        isAlive = i;
+        age = a;
+    }
+    
+    //Methods of the Super Class
+    public void lick(int n)
+    {
+        n = Math.abs(n);
+        for(int i = 0; i < n; i++)
+        {
+            System.out.println("Lick");
+        }
+    }
+    public String getName()
+    {
+        return this.name;
+    }
+    public abstract String sleep();
+}
