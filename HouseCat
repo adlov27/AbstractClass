@@ -1,0 +1,35 @@
+/**
+ * Makes HouseCat
+ *
+ * @Addison Loverin
+ */
+public class HouseCat extends Felis
+{
+    //Fields
+    boolean isRescue;
+    String preferredNip;
+    
+    //Constructors
+    public HouseCat()
+    {
+        super();
+        isRescue = true;
+        preferredNip = "Organic Catnip";
+    }
+    public HouseCat(String n)
+    {
+        super(n);
+        isRescue = true;
+        preferredNip  = "Kong Natural Nip";
+    }
+    public HouseCat(String n, double w, boolean i, int a, String s2, boolean iR)
+    {
+        super(n, w, i, a);//calls the constructor of the super class
+        isRescue = iR;
+        preferredNip = s2;
+    }
+    public String sleep()
+    {
+        return getName() + " is sleeping";
+    }
+}
