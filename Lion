@@ -1,0 +1,22 @@
+/**
+ * Makes Lion
+ * @Addison Loverin
+ */
+public class Lion extends Felis
+{
+   //instance variables for Lion
+   private int timesPoached;
+   private boolean isKing;
+   
+   public Lion(String n, int t, boolean iK)
+   {
+       super(n);
+       timesPoached = 0;
+       isKing = true;
+   }
+    
+   public String sleep()
+   {
+       return "In the jungle, the mighty jungle, the lion sleeps tonight";
+   }
+}
